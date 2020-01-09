@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Route-Planner</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js"></script>
+    <style>
+      .map {
+        position: absolute;
+        width: 600px;
+        height: 400px;
+        background: #f8f4f0;
+      }
+      .maptaxi {
+        left: 610px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div id="maptaxi" class="map maptaxi"></div>
+    <script src="/scripts/turin.js"></script>
+    <script src="/scripts/travel.js"></script>
+    <script src="/scripts/map.js"></script>
+  </body>
+</html>
