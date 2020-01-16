@@ -15,11 +15,36 @@
       .maptaxi {
         left: 610px;
       }
+      .descriptions {
+        position: absolute;
+        top: 450px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 18px;
+        letter-spacing: 0.6px;
+        word-spacing: -5px;
+        color: #3D1914;
+        font-weight: 400;
+        text-decoration: none solid rgb(68, 68, 68);
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+      }
+      .taxi-box {
+        left: 620px;
+      }
     </style>
   </head>
   <body>
     <div id="map" class="map"></div>
     <div id="maptaxi" class="map maptaxi"></div>
+    <div class="descriptions">
+      <strong>Vehicle: Car</strong> 
+      <p id="car-description">Click to select a route on the left map.</p>
+    </div>
+    <div class="descriptions taxi-box">
+      <strong>Vehicle: Taxi</strong> 
+      <p id="taxi-description">Click to select a route on the left map.</p>
+    </div>
     <script src="/scripts/turin.js"></script>
     <script src="/scripts/travel.js"></script>
     <script src="/scripts/map.js"></script>

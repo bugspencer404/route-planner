@@ -13,7 +13,7 @@ var map = new ol.Map({
         }),
         //overlay,
         turin,
-        travelLayer,
+        carTravelLayer,
         endsLayer        
     ],
     view: new ol.View({
@@ -31,7 +31,7 @@ var mapTaxi = new ol.Map({
         }),
         //overlay,
         turin,
-        travelLayer,
+        taxiTravelLayer,
         taxiEndsLayer        
     ],
     view: new ol.View({
@@ -49,6 +49,7 @@ function mapSingleClick(evt) {
 
     if (coordTracker.length == 2) {
         calculateTravel(coordTracker, "car");
+        calculateTravel(coordTracker, "taxi");
         
         coordTracker = [];
         featureType = "goal";

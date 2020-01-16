@@ -1,6 +1,7 @@
 exports.graphProvider = function () {
     return {
-        "uri": "https://graphhopper.com/api/1/route?point={startPoint}&point={destinationPoint}&vehicle={vehicleType}&debug=false&locale=it&points_encoded=false&instructions=true&elevation=false&optimize=false&key={authKey}",
+        //"uri": "https://graphhopper.com/api/1/route?point={startPoint}&point={destinationPoint}&vehicle={vehicleType}&debug=false&locale=it&points_encoded=false&instructions=true&elevation=false&optimize=false&key={authKey}",
+        "uri": "http://localhost:8989/route?point={startPoint}&point={destinationPoint}&vehicle={vehicleType}&debug=false&locale=it&points_encoded=false&instructions=true&elevation=false&optimize=false&key={authKey}",
         "startPoint": "0,0",
         "destinationPoint": "1,1",
         "vehicleType": "car",
