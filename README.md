@@ -14,7 +14,7 @@ GraphHopper.
 
 This web app has 2 maps, the first one displays the best route planning provided by GraphHopper in case of a car driver, the second one always displays the best route planning, but only after get the Taxi permissions (use of the bus lanes).
 
-# Component diagram
+## Component diagram
 
 ```plantuml
 @startuml
@@ -26,12 +26,12 @@ package "Customized GraphHopper" {
     [Some Dijkstra, I guess]
   }
 }
- 
+
 node "Route-planner" {
   [Backend]
   [Car map]
   [Taxi map]
-} 
+}
 
 [CarFlagEncoder] <--> [Some Dijkstra, I guess] : "Generate travel for Car!"
 [TaxyFlagEncoder] <--> [Some Dijkstra, I guess] : "Generate travel for Taxi!"
