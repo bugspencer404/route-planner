@@ -16,31 +16,4 @@ This web app has 2 maps, the first one displays the best route planning provided
 
 ## Component diagram
 
-```plantuml
-@startuml
-
-package "Customized GraphHopper" {
-  [CarFlagEncoder]
-  [TaxyFlagEncoder]
-  cloud {
-    [Some Dijkstra, I guess]
-  }
-}
-
-node "Route-planner" {
-  [Backend]
-  [Car map]
-  [Taxi map]
-}
-
-[CarFlagEncoder] <--> [Some Dijkstra, I guess] : "Generate travel for Car!"
-[TaxyFlagEncoder] <--> [Some Dijkstra, I guess] : "Generate travel for Taxi!"
-
-[Car map] <--> [Backend] : "Give me the best path for a Car!"
-[Taxi map] <--> [Backend] : "Give me the best path for a Taxi!"
-
-[Backend] <--> [CarFlagEncoder] : "It's a Car!"
-[Backend] <--> [TaxyFlagEncoder] : "It's a Taxi!"
-
-@enduml
-```
+![Route Planner Diagram](/frontend/images/route-planner-diagram.png)
