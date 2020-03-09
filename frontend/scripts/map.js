@@ -11,8 +11,8 @@ var map = new ol.Map({
         new ol.layer.Tile({
             source: new ol.source.OSM()
         }),
-        //overlay,
-        turin,
+        overlay,
+        //turin,
         carTravelLayer,
         endsLayer        
     ],
@@ -29,8 +29,8 @@ var mapTaxi = new ol.Map({
         new ol.layer.Tile({
             source: new ol.source.OSM()
         }),
-        //overlay,
-        turin,
+        overlay,
+        //turin,
         taxiTravelLayer,
         taxiEndsLayer        
     ],
